@@ -176,65 +176,8 @@ Recommendations:
 ## 🏗️ **Architecture**
 
 ### 🔁 **Agentic RAG Pipeline Overview**
+<img width="595" height="635" alt="image" src="https://github.com/user-attachments/assets/4b5b3f54-a77e-4366-9be6-a6fdd27dc3d7" />
 
-```
-┌─────────────────────────────────────────────────────┐
-│                                                       │
-│              User Query / Chat Input                 │
-│                      │                                │
-│                      ▼                                │
-│         ┌────────────────────────────┐               │
-│         │  Query Understanding Layer  │               │
-│         │ • Intent Recognition        │               │
-│         │ • Schema Analysis           │               │
-│         │ • Context Extraction        │               │
-│         └────────────┬─────────────────┘               │
-│                      │                                │
-│                      ▼                                │
-│         ┌────────────────────────────┐               │
-│         │   Agentic Decision Layer    │               │
-│         │ • Tool Selection            │               │
-│         │ • Execution Planning        │               │
-│         │ • Fallback Handling         │               │
-│         └────────────┬─────────────────┘               │
-│                      │                                │
-│        ┌─────────────┼─────────────┐                  │
-│        │             │             │                  │
-│        ▼             ▼             ▼                  │
-│    ┌────────┐  ┌────────┐  ┌────────────┐            │
-│    │  SQL   │  │ Quality│  │Performance │            │
-│    │Generate│  │ Analysis│ │ Optimize   │            │
-│    └────┬───┘  └───┬────┘  └─────┬──────┘            │
-│         │          │             │                   │
-│         └──────────┼─────────────┘                   │
-│                    │                                 │
-│                    ▼                                 │
-│         ┌────────────────────────┐                  │
-│         │  Snowflake Integration  │                  │
-│         │ • Schema Retrieval      │                  │
-│         │ • Query Execution       │                  │
-│         │ • Result Formatting     │                  │
-│         └────────────┬────────────┘                  │
-│                      │                               │
-│                      ▼                               │
-│         ┌────────────────────────┐                  │
-│         │  Gemini 2.5 Flash LLM   │                  │
-│         │ • Response Generation   │                  │
-│         │ • Explanation Creation  │                  │
-│         │ • Citation Formatting   │                  │
-│         └────────────┬────────────┘                  │
-│                      │                               │
-│                      ▼                               │
-│         ┌────────────────────────┐                  │
-│         │   Final Output Layer    │                  │
-│         │ • Chat Response         │                  │
-│         │ • SQL Display           │                  │
-│         │ • Results Table         │                  │
-│         │ • Source Attribution    │                  │
-│         └────────────────────────┘                  │
-│                                                       │
-└─────────────────────────────────────────────────────┘
-```
 
 ### 🧠 **Why This Architecture?**
 
