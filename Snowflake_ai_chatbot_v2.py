@@ -12,12 +12,12 @@ import json
 import pandas as pd
 
 # ========== CONFIGURATION ==========
-GEMINI_KEY = "AIzaSyDSKzmMC30f2mYn416cHeVi_BPNcE_y0Mk"
-SF_USER = "BETTERNINJA"
-SF_PASS = "Jyotipratik@5199"
-SF_ACCOUNT = "evwoxdb-ew39898"
-SF_WAREHOUSE = "COMPUTE_WH"
-SF_DATABASE = "AMAZON_SALES"
+GEMINI_KEY = ""
+SF_USER = ""
+SF_PASS = ""
+SF_ACCOUNT = ""
+SF_WAREHOUSE = ""
+SF_DATABASE = ""
 SF_SCHEMA = "PUBLIC"
 # ===================================
 
